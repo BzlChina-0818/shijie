@@ -1,0 +1,6 @@
+{
+  "name": "ModalInputSearch",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ModalInputSearch.js"
+}

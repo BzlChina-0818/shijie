@@ -1,0 +1,1141 @@
+	@charset "utf-8";
+	body,
+	html {
+	    width: 100%;
+	    height: 100%;
+	    background: #1b2d4b;
+	    font-size: 100px;
+	    margin: 0;
+	    font-family: '苹方', 'monospace', 'Microsoft YaHei', 'Arial', 'Conv_HelveticaNeue-BoldCond', Sans-Serif;
+	    background: url(/img/111.png);
+	}
+	
+	a {
+	    text-decoration: none;
+	    cursor: pointer;
+	    cursor: hand;
+	    color: #fff;
+	}
+	
+	a:hover {
+	    text-decoration: none;
+	}
+	
+	ul {
+	    padding: 0;
+	    list-style: none;
+	}
+	
+	* {
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    list-style: none;
+	    -webkit-touch-callout: none;
+	    /* -webkit-user-select: none;*/
+	    -webkit-appearance: none;
+	    text-decoration: none;
+	    font-family: "microsoft yahei", Arial, Helvetica, sans-serif;
+	    -webkit-font-smoothing: antialiased;
+	}
+	
+	.box {
+	    width: 100%;
+	    position: relative;
+	}
+	
+	.box .logo {
+	    width: 100%;
+	    margin: 0 auto;
+	    text-align: center;
+	    padding-top: .1rem;
+	    overflow: hidden;
+	    display: flex;
+	    justify-content: center;
+	}
+	
+	.box .logo img {
+	    display: inline-block;
+	    width: 10%;
+	    height: 10%;
+	}
+	
+	.box .logo img:nth-child(1) {
+	    display: inline-block;
+	    width: 10%;
+	    height: 10%;
+	}
+	
+	.box .logo div {
+	    border: 1px solid #fff;
+	    /* margin: 0 .05rem; */
+	}
+	
+	.box .title {
+	    width: 80%;
+	    margin: 0 auto;
+	    margin-top: .2rem;
+	}
+	
+	.box .title img {
+	    display: block;
+	}
+	
+	.box .title img:nth-child(1) {
+	    z-index: 999;
+	    width: 94%;
+	    margin: 0 auto;
+	    margin-top: -.3rem;
+	}
+	
+	.box .title img:nth-child(3) {
+	    position: absolute;
+	    left: 3%;
+	    top: 2%;
+	    width: 12%;
+	}
+	
+	.box .title img:nth-child(4) {
+	    position: absolute;
+	    left: 3%;
+	    top: 63%;
+	    width: 12%;
+	}
+	
+	.box .title img:nth-child(5) {
+	    position: absolute;
+	    right: 3%;
+	    top: 6%;
+	    width: 8%
+	}
+	
+	.box .title img:nth-child(6) {
+	    position: absolute;
+	    right: 9%;
+	    top: 20%;
+	    width: 6%;
+	}
+	
+	.box .title img:nth-child(7) {
+	    position: absolute;
+	    right: 3%;
+	    top: 54%;
+	    width: 8%
+	}
+	
+	.box .title img:nth-child(8) {
+	    position: absolute;
+	    right: 13%;
+	    top: 79%;
+	    width: 7%;
+	}
+	
+	.box .title .on {
+	    width: 80%;
+	    position: absolute;
+	    top: 18%;
+	}
+	
+	.wrap {
+	    width: 84%;
+	    margin: 0 auto;
+	    background: #1051CD;
+	    border-radius: 4.5rem 4.5rem 0 0;
+	    position: absolute;
+	    top: 75%;
+	    left: 8%;
+	}
+	
+	.box .record {
+	    width: 50%;
+	    text-align: center;
+	    margin: 0 auto;
+	    font-size: .14rem;
+	    color: #fff;
+	    padding: .06rem 0;
+	    border: .01rem solid #fff;
+	    border-radius: 25px;
+	    margin: .3rem auto .2rem;
+	}
+	/*竞猜记录*/
+	
+	.record-box {
+	    width: 90%;
+	    /*min-height: 5rem;*/
+	    margin: 0 auto;
+	    text-align: center;
+	    border-radius: .1rem;
+	    background: url(/img/2222.png);
+	    position: fixed;
+	    top: 5%;
+	    left: 5%;
+	    z-index: 999;
+	    display: none;
+	}
+	
+	.record-box .record-title {
+	    font-size: .24rem;
+	    color: #fff;
+	    padding: .1rem;
+	}
+	
+	.record-box .record_content {
+	    width: 95%;
+	    height: 3rem;
+	    overflow: scroll;
+	    margin: 0 auto .2rem;
+	}
+	
+	.record-box .anonymous {
+	    width: 100%;
+	    font-size: .14rem;
+	    color: #fff;
+	    text-align: center;
+	    padding: .1rem 0;
+	    background: #00246A;
+	    display: none;
+	}
+	
+	.record-box .record_con {
+	    width: 100%;
+	    font-size: .14rem;
+	    color: #fff;
+	    margin: .05rem auto;
+	    background: #00246A;
+	    overflow: hidden;
+	    padding: .05rem 0 0 .05rem;
+	}
+	
+	.record-box .record_con .date {
+	    display: inline-block;
+	    float: left;
+	    /*padding: 0 .1rem .1rem 0;*/
+	}
+	
+	.record-box .record_con .team_con {
+	    display: inline-block;
+	    float: left;
+	    margin-left: .1rem;
+	}
+	
+	.record-box .record_con .select {
+	    display: block;
+	    width: 85%;
+	    text-align: left;
+	    float: left;
+	    padding: .05rem 0;
+	}
+	
+	.record-box .record_con .result {
+	    display: inline-block;
+	    float: right;
+	    margin-top: -.4rem;
+	    padding-right: .1rem;
+	    clear: both;
+	}
+	
+	.record-box .close {
+	    width: 10%;
+	    height: .05rem;
+	    margin: 0 auto;
+	    position: absolute;
+	    bottom: 0.5rem;
+	    left: 45%;
+	}
+	
+	.record-box .close img {
+	    width: 100%;
+	}
+	
+	.wrap p {
+	    font-size: .14rem;
+	    text-align: center;
+	    color: rgb(255, 208, 0);
+	}
+	
+	.box .count {
+	    width: 65%;
+	    margin: 0 auto;
+	    font-size: .24rem;
+	    color: #fff;
+	    line-height: .42rem;
+	    text-align: center;
+	    display: block;
+	    color: rgb(255, 208, 0);
+	}
+	
+	.box .time {
+	    font-size: .16rem;
+	    color: #fff;
+	    text-align: center;
+	    margin: 0 0 .1rem;
+	    display: block;
+	    margin-left: .1rem;
+	}
+	
+	.data span {
+	    font-size: .16rem;
+	    color: #fff;
+	}
+	
+	.box .coming {
+	    width: 100%;
+	    font-size: .24rem;
+	    color: #fff;
+	    text-align: center;
+	    margin: .2rem auto;
+	    display: none;
+	}
+	
+	#vs {
+	    width: 90%;
+	    border-radius: 10px;
+	    margin: 0 auto;
+	    background: rgba(0, 0, 0, 0.37);
+	}
+	
+	#vs p {
+	    padding: .1rem 0;
+	    font-size: .16rem;
+	    color: #fff;
+	}
+	
+	.content {
+	    width: 90%;
+	    margin: 0 auto;
+	    border-radius: .18rem;
+	    overflow: hidden;
+	}
+	
+	.content .team {
+	    width: 38%;
+	    text-align: center;
+	    float: left;
+	    margin-top: -.3rem;
+	    margin-bottom: .1rem;
+	}
+	
+	.content .team_left {
+	    margin-left: 3%;
+	}
+	
+	.content .team img {
+	    width: 94%;
+	}
+	
+	.content .team p {
+	    font-size: .16rem;
+	    color: #fff;
+	    margin-top: -.5rem;
+	}
+	
+	.content .vs {
+	    width: 18%;
+	    font-size: .18rem;
+	    color: #fff;
+	    float: left;
+	    margin-top: .3rem;
+	    text-align: center;
+	}
+	
+	.stake {
+	    width: 100%;
+	    margin: 0 auto;
+	    overflow: hidden;
+	    display: flex;
+	    justify-content: space-between;
+	}
+	
+	.stake .stake_con {
+	    width: 50%;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	
+	.stake .stake_con img {
+	    width: 100%;
+	}
+	
+	.stake .stake_con .con {
+	    font-size: .16rem;
+	    color: #fff;
+	    font-family: PingFangSC-Regular;
+	    color: rgba(195, 195, 195, 1);
+	}
+	
+	.Master_sheng {
+	    width: 100%;
+	    font-size: .16rem;
+	    display: flex;
+	    justify-content: center;
+	    margin-top: .45rem;
+	    margin-bottom: .1rem;
+	}
+	
+	.Master_sheng span {
+	    display: block;
+	    font-family: PingFangSC-Regular;
+	    color: rgba(195, 195, 195, 1);
+	}
+	
+	.Katsuya_sheng {
+	    width: 100%;
+	    font-size: .16rem;
+	    display: flex;
+	    justify-content: center;
+	    margin-top: .45rem;
+	    margin-bottom: .1rem;
+	}
+	
+	.Katsuya_sheng span {
+	    display: block;
+	    font-family: PingFangSC-Regular;
+	    color: rgba(195, 195, 195, 1);
+	}
+	
+	.stake .stake_con .state {
+	    width: 100%;
+	    font-size: .14rem;
+	    color: #fff;
+	    position: absolute;
+	    top: 40%;
+	}
+	
+	.stake .stake_con .sheng {
+	    width: 30%;
+	    font-size: .2rem;
+	    color: #fff;
+	    text-align: center;
+	    position: absolute;
+	    top: 50%;
+	    background: rgba(232, 112, 20, 1);
+	    border-radius: 4px;
+	    /*padding: .03rem .2rem;*/
+	    margin-top: .3rem;
+	}
+	
+	.stake .stake_c .sheng {
+	    font-size: .2rem;
+	    position: absolute;
+	    top: 50%;
+	}
+	
+	.rule {
+	    width: 100%;
+	    font-size: .12rem;
+	    color: #fff;
+	    text-align: center;
+	    margin-top: -.3rem;
+	}
+	
+	.next {
+	    width: 100%;
+	    margin: 0 auto;
+	    border-radius: .18rem;
+	    margin-top: .2rem;
+	    overflow: hidden;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    padding: .2rem 0 .2rem;
+	}
+	
+	.next .next_title {
+	    width: 100%;
+	    font-size: .14rem;
+	    color: #fff;
+	    text-align: center;
+	    padding: .05rem 0;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	
+	.next .next_c_t {
+	    font-size: .14rem;
+	    color: #fff;
+	    margin-left: .05rem;
+	}
+	
+	.next .next_c_b {
+	    font-size: .14rem;
+	    color: #fff;
+	    margin-left: .05rem;
+	}
+	
+	.next .next_l {
+	    /* margin-left: 5%; */
+	}
+	
+	.guojia {
+	    width: 100%;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	
+	.guojia .next_con {
+	    /* width: 50%; */
+	    display: flex;
+	    align-items: center;
+	}
+	
+	.guojia .next_l {
+	    width: 45%;
+	    justify-content: flex-end;
+	}
+	
+	.guojia .next_l p {
+	    font-size: .14rem;
+	    margin-right: .05rem;
+	}
+	
+	.guojia .next_r {
+	    width: 45%;
+	    justify-content: flex-start;
+	}
+	
+	.guojia .next_r p {
+	    font-size: .14rem;
+	    margin-left: .05rem;
+	}
+	
+	.guojia .next_con img {
+	    width: 34%;
+	}
+	
+	.guojia .next_con p {
+	    color: #fff;
+	    font-size: .13rem;
+	}
+	
+	.guojia span {
+	    display: block;
+	    font-size: .24rem;
+	    margin: 0 .05rem;
+	    color: #fff;
+	}
+	
+	.share {
+	    width: 50%;
+	    margin: 0 auto;
+	    text-align: center;
+	    /*background: blue;*/
+	    border: .04rem solid rgb(74, 144, 266);
+	    border-radius: .14rem;
+	    margin-top: .2rem;
+	}
+	
+	.share .share_con {
+	    /*background: rgba(245,81,96);*/
+	    background: -webkit-linear-gradient(rgb(245, 81, 96), rgb(159, 4, 27));
+	    background: -o-linear-gradient(rgb(245, 81, 96), rgb(159, 4, 27));
+	    background: -moz-linear-gradient(rgb(245, 81, 96), rgb(159, 4, 27));
+	    background: linear-gradient(rgb(245, 81, 96), rgb(159, 4, 27));
+	    border: .04rem solid #fff;
+	    border-radius: .1rem;
+	}
+	
+	.share .share_con p:nth-child(1) {
+	    font-size: .24rem;
+	    color: #fff;
+	    padding: .1rem 0 .05rem;
+	}
+	
+	.share .share_con p:nth-child(2) {
+	    font-size: .14rem;
+	    color: #fff;
+	    padding: 0 0 .1rem;
+	}
+	
+	.down {
+	    display: block;
+	    width: 60%;
+	    margin: 0 auto;
+	    text-align: center;
+	    border-radius: .14rem;
+	    margin-top: .35rem;
+	}
+	
+	.down .down_con {
+	    background: #fff;
+	    border: .04rem solid #fff;
+	    border-radius: .1rem;
+	}
+	
+	.down .down_con p:nth-child(1) {
+	    font-size: .20rem;
+	    color: rgb(16, 81, 205);
+	}
+	
+	.down .down_con p:nth-child(2) {
+	    font-size: .12rem;
+	    color: rgb(16, 81, 205);
+	}
+	
+	.text {
+	    width: 84%;
+	    margin: 0 auto;
+	    font-size: .12rem;
+	    color: #fff;
+	    padding: .1rem;
+	    border-radius: .18rem;
+	    margin-top: .2rem;
+	    position: absolute;
+	    bottom: -9.2rem;
+	    left: 8%;
+	}
+	
+	.text h3 {
+	    width: 100%;
+	    font-size: .18rem;
+	    line-height: .35rem;
+	}
+	
+	.text .foot {
+	    width: 100%;
+	    margin-top: .5rem;
+	}
+	
+	.text .foot p {
+	    width: 100%;
+	    text-align: center;
+	}
+	
+	.text .foot p span {
+	    font-size: .16rem;
+	    font-weight: bold;
+	    margin-right: .1rem;
+	}
+	
+	.erweima {
+	    width: 35%;
+	    margin: 0 auto;
+	    margin-top: .2rem;
+	}
+	
+	.erweima img {
+	    width: 100%;
+	}
+	
+	.erweima p {
+	    width: 100%;
+	    font-size: .12rem;
+	    color: #fff;
+	    text-align: center;
+	    margin-top: -.3rem;
+	}
+	
+	footer {
+	    width: 100%;
+	    font-size: .18rem;
+	    color: #fff;
+	    text-align: center;
+	    margin-top: .3rem;
+	    padding-bottom: .2rem;
+	}
+	/*
+	 * 投注确认弹框
+	 * */
+	
+	.dialog {
+	    width: 80%;
+	    position: fixed;
+	    top: 30%;
+	    left: 10%;
+	    background: #1051cd url(/img/2222.png) no-repeat;
+	    background-size: 100% 100%;
+	    border-radius: 5px;
+	    display: none;
+	    z-index: 999;
+	}
+	
+	.dialog h1 {
+	    width: 100%;
+	    padding: .1rem 0 0;
+	    text-align: center;
+	    color: #fff;
+	    font-size: .14rem;
+	    font-weight: normal;
+	}
+	
+	.flag {
+	    width: 100%;
+	    height: 1rem;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    padding: 0 .7rem .2rem .5rem;
+	}
+	
+	.flag img {
+	    width: 45%;
+	}
+	
+	.flag span {
+	    font-size: .6rem;
+	    color: rgb(255, 212, 0)
+	}
+	
+	.btn {
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+	    margin: .35rem 0;
+	}
+	
+	.btn span {
+	    display: block;
+	    width: 40%;
+	    font-size: .14rem;
+	    color: rgb(16, 81, 205);
+	    padding: .1rem 0;
+	    background: #fff;
+	    border-radius: 20px;
+	    text-align: center;
+	}
+	
+	.btn .cancel {
+	    color: #8e8e8e;
+	    box-shadow: 0px 3px 5px #000;
+	}
+	
+	.btn span:nth-child(2) {
+	    margin-left: .075rem;
+	    box-shadow: 0px 3px 5px #000;
+	}
+	
+	.btn span:nth-child(1) {
+	    margin-right: .075rem;
+	    box-shadow: 0px 3px 5px #000;
+	    color: #8e8e8e;
+	}
+	
+	.dialog p {
+	    text-align: center;
+	    color: #fff;
+	    line-height: .3rem;
+	    font-size: .2rem;
+	}
+	
+	.dialog p .ranks {
+	    margin-right: .2rem;
+	}
+	
+	.inp {
+	    margin: .3rem 0;
+	}
+	
+	.inp p {
+	    width: 85%;
+	    height: .4rem;
+	    margin: 0 auto;
+	    background: #fff;
+	    padding: 0 .1rem;
+	    display: flex;
+	    align-items: center;
+	    box-shadow: 2px 2px 2px #999 inset;
+	}
+	
+	.inp i {
+	    display: block;
+	    width: 85%;
+	    height: .2rem;
+	    font-size: .14rem;
+	    color: #f00;
+	    margin: .05rem auto;
+	}
+	
+	.inp p input {
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	    font-size: .16rem;
+	    color: #000;
+	    background: none;
+	    border: none;
+	    outline: none;
+	}
+	
+	.inp .cell2 {
+	    display: flex;
+	    justify-content: space-between;
+	    /*margin-top: .3rem;*/
+	}
+	
+	.inp .cell2 input {
+	    width: 60%;
+	}
+	
+	.inp .cell2 button {
+	    background: none;
+	    outline: none;
+	    border: none;
+	    display: block;
+	    width: 46%;
+	    z-index: 999;
+	    color: rgb(16, 81, 205);
+	    font-size: .12rem;
+	    line-height: .4rem;
+	}
+	
+	.queding {
+	    font-size: .12rem !important;
+	}
+	/*
+	 登录弹窗
+	 * */
+	
+	.code {
+	    width: 80%;
+	    margin: 0 auto;
+	    background: #1051cd url(/img/2222.png) no-repeat;
+	    background-size: 100% 100%;
+	    border-radius: 5px;
+	    position: fixed;
+	    left: 10%;
+	    top: 28%;
+	    font-size: 0;
+	    display: none;
+	    z-index: 999;
+	}
+	
+	.code .code_con {
+	    width: 90%;
+	    height: 100%;
+	    /*background: #FFD83E;*/
+	    margin: 0 auto;
+	    font-size: 0;
+	    margin-top: .3rem;
+	}
+	
+	.code_con p {
+	    width: 100%;
+	    margin: 0;
+	    margin-top: .15rem;
+	    text-align: center;
+	    font-size: .2rem;
+	    font-family: MyFont;
+	    font-weight: 900;
+	    background: -webkit-linear-gradient(rgb(244, 39, 39), rgb(202, 1, 1));
+	    background: -0-linear-gradient(rgb(244, 39, 39), rgb(202, 1, 1));
+	    background: -moz-linear-gradient(rgb(244, 39, 39), rgb(202, 1, 1));
+	    background: linear-gradient(rgb(244, 39, 39), rgb(202, 1, 1));
+	    -webkit-background-clip: text;
+	    color: transparent;
+	}
+	
+	.cell_con {
+	    width: 100%;
+	    height: .28rem;
+	    /*background: #FF0000;*/
+	    position: relative;
+	    margin-top: .1rem;
+	}
+	
+	.cell_con .cell {
+	    display: block;
+	    width: 60%;
+	    height: .4rem;
+	    margin-right: .2rem;
+	    border: none;
+	    outline: none;
+	    text-indent: .2em;
+	    font-size: .14rem;
+	    color: #000;
+	    padding-left: .05rem;
+	    -webkit-user-select: auto;
+	}
+	
+	.cell_con .cell_btn {
+	    width: 33%;
+	    padding: 0;
+	    outline: none;
+	    outline: none;
+	    font-size: .12rem;
+	    color: #fff;
+	    line-height: .4rem;
+	    margin-left: .2rem;
+	    background: url(http://winchainos.ufile.ucloud.com.cn/public/fw/Artboard11.png) no-repeat;
+	    background-size: 100% 100%;
+	    border: none;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	}
+	
+	.ipt_con {
+	    width: 100%;
+	    margin-top: .5rem;
+	}
+	
+	.ipt_con .ipt {
+	    display: block;
+	    border: none;
+	    outline: none;
+	    width: 60%;
+	    height: .4rem;
+	    text-indent: .2em;
+	    font-size: .14rem;
+	    color: #000;
+	    padding-left: .05rem;
+	    -webkit-user-select: auto;
+	}
+	
+	.enter {
+	    width: 40%;
+	    margin: 0 auto;
+	    font-size: .18rem;
+	    color: #fff;
+	    text-align: center;
+	    background: url(http://winchainos.ufile.ucloud.com.cn/public/fw/Artboard11.png) no-repeat;
+	    background-size: 100% 100%;
+	    padding: .12rem 0;
+	    margin: .3rem auto;
+	}
+	/*提示信息*/
+	
+	.code i {
+	    display: block;
+	    width: 85%;
+	    height: .2rem;
+	    font-size: .14rem;
+	    color: #f00;
+	    margin: .05rem auto;
+	}
+	/*遮罩层*/
+	
+	.div1 {
+	    width: 100%;
+	    height: 150%;
+	    background: rgba(0, 0, 0, 0.7);
+	    position: fixed;
+	    top: 0;
+	    display: none;
+	}
+	
+	.div2 {
+	    width: 100%;
+	    height: 150%;
+	    background: rgba(0, 0, 0, 0);
+	    position: absolute;
+	    top: 0;
+	    display: none;
+	}
+	
+	.div3 {
+	    width: 100%;
+	    height: 150%;
+	    background: rgb(108, 47, 8, .05);
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    display: none;
+	}
+	
+	.div3 .dlog {
+	    width: 80%;
+	    height: 54%;
+	    background: url(http://winchainos.ufile.ucloud.com.cn/public/fw/Artboard223Copy2.png) no-repeat;
+	    background-size: 100% 100%;
+	    position: fixed;
+	    left: 10%;
+	    top: 10%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: flex-end;
+	    padding-bottom: 16%;
+	}
+	
+	.div3 .dlog img {
+	    width: 52%;
+	}
+	
+	.div4 {
+	    width: 100%;
+	    height: 150%;
+	    background: rgb(108, 47, 8, .05);
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    display: none
+	}
+	
+	.div4 .dlog {
+	    width: 80%;
+	    height: 54%;
+	    background: url(http://winchainos.ufile.ucloud.com.cn/public/fw/Artboard223Copy32.png) no-repeat;
+	    background-size: 100% 100%;
+	    position: fixed;
+	    left: 10%;
+	    top: 10%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: flex-end;
+	    padding-bottom: 16%;
+	}
+	
+	.div4 .dlog img {
+	    width: 52%;
+	}
+	
+	.input {
+	    width: 10%;
+	    height: 1%;
+	    outline: none;
+	    background: none;
+	    border: none;
+	    position: absolute;
+	    left: -.5rem;
+	}
+	/*竞猜记录*/
+	
+	.record-box {
+	    width: 90%;
+	    /*min-height: 5rem;*/
+	    margin: 0 auto;
+	    text-align: center;
+	    /*background: rgb(209, 54, 32);*/
+	    position: fixed;
+	    top: 5%;
+	    left: 5%;
+	    z-index: 999;
+	    display: none;
+	}
+	
+	.record-box .record-title {
+	    font-size: .24rem;
+	    color: #fff;
+	    padding: .1rem;
+	}
+	
+	.record-box .record_content {
+	    width: 95%;
+	    height: 3rem;
+	    overflow: scroll;
+	    margin: 0 auto .2rem;
+	}
+	
+	.record-box .record_content .anonymous {
+	    width: 100%;
+	    font-size: .14rem;
+	    color: #fff;
+	    text-align: center;
+	    padding: .1rem 0;
+	    background: #00246A;
+	    display: block;
+	}
+	
+	.record-box .record_con {
+	    width: 100%;
+	    font-size: .14rem;
+	    color: #fff;
+	    margin: .05rem auto;
+	    background: #00246A;
+	    overflow: hidden;
+	    padding: .05rem 0 0 .05rem;
+	}
+	
+	.record-box .record_con .date {
+	    display: inline-block;
+	    float: left;
+	    /*padding: 0 .1rem .1rem 0;*/
+	}
+	
+	.record-box .record_con .team_con {
+	    display: inline-block;
+	    float: left;
+	    margin-left: .1rem;
+	}
+	
+	.record-box .record_con .select {
+	    display: block;
+	    width: 85%;
+	    text-align: left;
+	    float: left;
+	    padding: .05rem 0;
+	}
+	
+	.record-box .record_con .result {
+	    display: inline-block;
+	    float: right;
+	    margin-top: -.4rem;
+	    padding-right: .1rem;
+	    clear: both;
+	}
+	
+	.record-box .close {
+	    width: 10%;
+	    height: .05rem;
+	    margin: 0 auto;
+	    position: absolute;
+	    bottom: 0.5rem;
+	    left: 45%;
+	}
+	
+	.record-box .close img {
+	    width: 100%;
+	}
+	
+	.code .tit {
+	    width: 100%;
+	    text-align: center;
+	    padding-top: .2rem;
+	    color: #fff;
+	    font-size: .2rem;
+	}
+	
+	.Competition {
+	    width: 90%;
+	    margin: 0 auto;
+	    background: #1051cd url(/img/bj.png) no-repeat;
+	    background-size: 100% 100%;
+	    border-radius: 5px;
+	    position: fixed;
+	    left: 5%;
+	    top: 28%;
+	    font-size: 0;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    align-items: center;
+	    display: none;
+	    z-index: 999;
+	}
+	
+	.Competition .on {
+	    width: 100%;
+	    padding: .7rem 0 .9rem;
+	    text-align: center;
+	    color: #fff;
+	    font-size: .2rem;
+	}
+	
+	.Competition span {
+	    display: block;
+	    width: 43%;
+	    font-size: .16rem;
+	    color: #043AA1;
+	    text-align: center;
+	    padding: .1rem;
+	    background: #fff;
+	    border-radius: .5rem;
+	}
+	
+	.Competition .bot {
+	    width: 100%;
+	    text-align: center;
+	    padding-top: .7rem;
+	    padding-bottom: .1rem;
+	    color: #fff;
+	    font-size: .14rem;
+	}
+	
+	.data {
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+	}

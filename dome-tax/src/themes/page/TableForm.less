@@ -1,0 +1,42 @@
+@border-color: #E4E4E4;
+:global {
+    .table-form{
+      .table-form-title{
+        margin-bottom: 16px;
+        h1{
+          text-align: center;
+        }
+        .desc{
+          padding:24px;
+          border:1px solid @border-color;
+        }
+      }
+      .table-form-content{
+        width:100%;
+        font-size:14px;
+        line-height:1.2;
+        text-align: center;
+        color:#666666;
+        border-left:1px solid @border-color;
+        overflow-x: auto;
+        table{
+          width: 100%;
+          border-top:1px solid @border-color;
+        }
+        tr td,tr th,.thead-td{
+          border-right:1px solid @border-color;
+          border-bottom:1px solid @border-color;
+          padding:12px 4px;
+        }
+        tr th,.thead-td{
+          background: #F8F8F8;
+        }
+        Button{
+          min-width:60px;
+          height:28px;
+          border-color:#D9D9D9;
+          padding: 0 6px;
+        }
+      }
+    }
+}

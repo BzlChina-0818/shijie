@@ -1,0 +1,27 @@
+.inputModalData{
+  position: relative;
+  :global{
+      input.ant-input-disabled{
+        display: inline-block;
+        width: 100%;
+        border-right: none;
+        border-bottom-right-radius:0;
+        border-top-right-radius:0;
+      }
+      .ant-btn-group {
+        position:absolute;
+        right: 0;
+        button.ant-btn{
+          padding:0 10px;
+          width: auto;
+          height: auto;
+          line-height: 31px;
+          &:first-child{
+            border-bottom-left-radius:0;
+            border-top-left-radius:0;
+          }
+        }
+      }
+  }
+
+}

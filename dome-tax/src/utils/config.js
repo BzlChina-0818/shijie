@@ -1,0 +1,36 @@
+import {
+  commonAPI,
+  businessConfigAPI,
+  entryInvoiceAPI,
+  processAPI,
+  taxManageAPI,
+  customerFormAPI,
+  dynamicAPI,
+  VATmanageAPI,
+  outputInvoiceAPI,
+  invoiceDetailAPI,
+  reportFormTplAPI,
+} from "./APIpath"
+
+module.exports = {
+  name: 'Utax',
+  prefix: 'utax',
+  footerText: 'Utax  © 2017 yuanian',
+  logo: '/logo.svg',
+  iconFontCSS: '/iconfont.css',
+  iconFontJS: '/iconfont.js',
+  CORS: [],
+  openPages: ['/login', '/invoiceCode'],
+  apiPrefix: commonAPI.API_BASE,
+  commonAPI,
+  businessConfigAPI,
+  entryInvoiceAPI,
+  processAPI,
+  taxManageAPI,
+  customerFormAPI,
+  dynamicAPI,
+  VATmanageAPI,
+  outputInvoiceAPI,
+  invoiceDetailAPI,
+  reportFormTplAPI
+}
